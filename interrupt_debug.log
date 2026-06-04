@@ -1,0 +1,54 @@
+04:58:39 ENTER: queued interrupt msg='你当前没有 write_file 工具可用。请直接以文本表格形式输出推荐结果，不要尝试写入文件或调用 curl。重新执行', agent_running=True
+04:58:39 interrupt fired: msg='你当前没有 write_file 工具可用。请直接以文本表格形式输出推荐结果，不要尝试写入文件或调用 curl。重新执行', children=1, parent._interrupt=True
+  child[0]._interrupt=True
+05:02:41 ENTER: queued interrupt msg='继续帮我推荐类似活侠传的游戏要剧情文本足够优秀', agent_running=True
+05:02:41 interrupt fired: msg='继续帮我推荐类似活侠传的游戏要剧情文本足够优秀', children=0, parent._interrupt=True
+05:20:41 interrupt fired: msg='停止当前所有工具调用。不要使用 curl 或 browser_snapshot。请基于你已有的知识，直接以表格形式给出 ', children=1, parent._interrupt=True
+  child[0]._interrupt=True
+05:20:41 ENTER: queued interrupt msg='停止当前所有工具调用。不要使用 curl 或 browser_snapshot。请基于你已有的知识，直接以表格形式给出 ', agent_running=True
+06:17:12 interrupt fired: msg='停住，你怎么又卡死了似的解释下你在做什么', children=0, parent._interrupt=True
+06:17:12 ENTER: queued interrupt msg='停住，你怎么又卡死了似的解释下你在做什么', agent_running=True
+06:31:52 ENTER: queued interrupt msg='退出', agent_running=True
+06:31:52 interrupt fired: msg='退出', children=0, parent._interrupt=True
+04:17:49 interrupt fired: msg='[Pasted text #1: 9 lines → /home/da/.hermes/pastes/paste_1_0', children=0, parent._interrupt=True
+04:17:49 ENTER: queued interrupt msg='[Pasted text #1: 9 lines → /home/da/.hermes/pastes/paste_1_0', agent_running=True
+04:21:24 interrupt fired: msg='停一下禁止用steammd 你给我用workshooDL完成所有下载', children=0, parent._interrupt=True
+04:21:24 ENTER: queued interrupt msg='停一下禁止用steammd 你给我用workshooDL完成所有下载', agent_running=True
+04:23:40 ENTER: queued interrupt msg='我也分不清这是它主页https://gitcode.com/gh_mirrors/wo/WorkshopDL', agent_running=True
+04:23:40 interrupt fired: msg='我也分不清这是它主页https://gitcode.com/gh_mirrors/wo/WorkshopDL', children=0, parent._interrupt=True
+10:51:53 interrupt fired: msg='如果做不到或者难以实现我能接受一局游戏内倍率不可调的设定但是每局游戏开始前可以自我修改', children=0, parent._interrupt=True
+10:51:53 ENTER: queued interrupt msg='如果做不到或者难以实现我能接受一局游戏内倍率不可调的设定但是每局游戏开始前可以自我修改', agent_running=True
+13:43:06 interrupt fired: msg='你怎么卡住了说一下原因', children=0, parent._interrupt=True
+13:43:06 ENTER: queued interrupt msg='你怎么卡住了说一下原因', agent_running=True
+17:22:50 ENTER: queued interrupt msg='你不能系统排查一下到底哪些场景和动画会影响吗我自己都亲手试出来6个了', agent_running=True
+17:22:50 interrupt fired: msg='你不能系统排查一下到底哪些场景和动画会影响吗我自己都亲手试出来6个了', children=0, parent._interrupt=True
+08:24:58 interrupt fired: msg='补充一下我下载路径在C:\\Users\\da\\WorkshopDL\\steamcmd\\steamapps\\workshop', children=0, parent._interrupt=True
+08:24:58 ENTER: queued interrupt msg='补充一下我下载路径在C:\\Users\\da\\WorkshopDL\\steamcmd\\steamapps\\workshop', agent_running=True
+10:25:24 interrupt fired: msg='停一下我需要你停止说出你现有的结论', children=0, parent._interrupt=True
+10:25:24 ENTER: queued interrupt msg='停一下我需要你停止说出你现有的结论', agent_running=True
+10:36:20 ENTER: queued interrupt msg='还是限制回答时间3分钟', agent_running=True
+10:36:20 interrupt fired: msg='还是限制回答时间3分钟', children=0, parent._interrupt=True
+12:55:39 interrupt fired: msg='你在干什么我这个要求是办不到还是其实不需要做', children=0, parent._interrupt=True
+12:55:39 ENTER: queued interrupt msg='你在干什么我这个要求是办不到还是其实不需要做', agent_running=True
+13:40:20 interrupt fired: msg='帮我装好JAVA  Ghidra 的位置在C:\\Users\\da\\Downloads\\ghidra_12.1_PUBLI', children=0, parent._interrupt=True
+13:40:20 ENTER: queued interrupt msg='帮我装好JAVA  Ghidra 的位置在C:\\Users\\da\\Downloads\\ghidra_12.1_PUBLI', agent_running=True
+14:12:56 interrupt fired: msg='别了停一下', children=0, parent._interrupt=True
+14:12:56 ENTER: queued interrupt msg='别了停一下', agent_running=True
+14:41:25 ENTER: queued interrupt msg='停一下 叫你测试"Ghidra MCP 需要很久吗', agent_running=True
+14:41:25 interrupt fired: msg='停一下 叫你测试"Ghidra MCP 需要很久吗', children=0, parent._interrupt=True
+14:47:13 ENTER: queued interrupt msg='\\', agent_running=True
+14:47:13 interrupt fired: msg='\\', children=0, parent._interrupt=True
+15:09:08 ENTER: queued interrupt msg='██ 行为铁律（不可覆盖）██\n2. 用户说“停/别/不要/等一下”时，必须立刻停止一切动作和计划，回复“已停止，等待指', agent_running=True
+15:09:08 interrupt fired: msg='██ 行为铁律（不可覆盖）██\n2. 用户说“停/别/不要/等一下”时，必须立刻停止一切动作和计划，回复“已停止，等待指', children=0, parent._interrupt=True
+15:20:33 ENTER: queued interrupt msg='停一下我的意思时让你整理所有个ghidra MCP 相关的上下文就行别又干一堆事情', agent_running=True
+15:20:33 interrupt fired: msg='停一下我的意思时让你整理所有个ghidra MCP 相关的上下文就行别又干一堆事情', children=0, parent._interrupt=True
+15:43:08 ENTER: queued interrupt msg='我之前看你用过duckduckgo 这装了MCP和不装相比有什么提升吗?', agent_running=True
+15:43:08 interrupt fired: msg='我之前看你用过duckduckgo 这装了MCP和不装相比有什么提升吗?', children=0, parent._interrupt=True
+17:17:43 interrupt fired: msg='停一下', children=0, parent._interrupt=True
+17:17:43 ENTER: queued interrupt msg='停一下', agent_running=True
+17:21:47 ENTER: queued interrupt msg='为什么这么简单的任务你能卡住这么久还在进行上一步', agent_running=True
+17:21:47 interrupt fired: msg='为什么这么简单的任务你能卡住这么久还在进行上一步', children=0, parent._interrupt=True
+20:02:59 ENTER: queued interrupt msg='你怎么卡住了', agent_running=True
+20:02:59 interrupt fired: msg='你怎么卡住了', children=0, parent._interrupt=True
+20:10:57 ENTER: queued interrupt msg='又卡住了吗你的进程显示总是让我很担心', agent_running=True
+20:10:57 interrupt fired: msg='又卡住了吗你的进程显示总是让我很担心', children=0, parent._interrupt=True

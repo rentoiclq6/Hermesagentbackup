@@ -1,0 +1,25 @@
+# === Hermes config gitignore ===
+# 大文件 / 临时 / 可重建目录
+hermes-agent/
+node/
+checkpoints/
+sessions/
+logs/
+cache/
+audio_cache/
+image_cache/
+sandboxes/
+
+# 数据库文件 — 二进制，会话/检查点相关
+state.db*
+*.db
+*.db-*
+
+# .env 包含 API Key，默认排除（如需纳入，手动 git add -f .env）
+.env
+
+# 大 profile 内的检查点/会话
+profiles/*/checkpoints/
+profiles/*/sessions/
+profiles/*/logs/
+profiles/*/cache/

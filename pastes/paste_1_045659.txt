@@ -1,0 +1,11 @@
+stack traceback:
+	[string "---------------------------------------------..."]:33: in main chunk
+>>> Magical Princess Scanner 启动... 
+[OK] MyData 类已找到 
+--- MyData 的所有字段 (多种API尝试) --- 
+[方法A] mono_class_enumFields: 
+[方法B] mono_enumDomain 备用... 
+[方法C] 访问class.fields属性: 
+错误:[string "---------------------------------------------..."]:68: attempt to index a number value (local 'myDataClass')
+stack traceback:
+	[string "---------------------------------------------..."]:68: in main chunk

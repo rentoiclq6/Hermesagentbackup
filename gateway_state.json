@@ -1,0 +1,1 @@
+{"pid":8861,"kind":"hermes-gateway","argv":["/home/da/.local/bin/hermes","gateway","run"],"start_time":11065397,"gateway_state":"running","exit_reason":null,"restart_requested":false,"active_agents":0,"platforms":{"weixin":{"state":"connected","error_code":null,"error_message":null,"updated_at":"2026-05-16T03:43:44.081718+00:00"}},"updated_at":"2026-05-16T03:43:44.085616+00:00"}

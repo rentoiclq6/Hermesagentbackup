@@ -1,0 +1,10 @@
+
+Running: & "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe" /target:library /out:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\PiratesGambitMod.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\core\0Harmony.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\core\BepInEx.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\PiratesGambit_Data\Managed\Assembly-CSharp.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\PiratesGambit_Data\Managed\Assembly-CSharp-firstpass.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\PiratesGambit_Data\Managed\UnityEngine.dll" /r:"D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\PiratesGambit_Data\Managed\UnityEngine.CoreModule.dll" "D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs" 2>&1
+
+=== BUILD FAILED ===
+Microsoft (R) Visual C# Compiler version 4.8.4084.0  for C# 5 Copyright (C) Microsoft Corporation. All rights reserved.    This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240  BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(18,28): error CS1056: 意外的字符“$” BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(19,28): error CS1056: 意外的字符“$” BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(34,44): error CS1056: 意外的字符“$” BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(60,35): error CS1056: 意外的字符“$”
+
+Common fixes:
+  - Missing UnityEngine.CoreModule.dll: copy it from Unity Editor installation
+  - 'type not found': the game DLL structure differs from expected
+Press Enter to exit:

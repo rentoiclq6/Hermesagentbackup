@@ -1,0 +1,12 @@
+[Warning: Unity Log] Unable to add underline since the primary Font Asset doesn't contain the underline character.
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) (at <5daa034a65ef4e92beb94b6ef26af36a>:0)
+GameManager_New+<RerollAnimation>d__335.MoveNext () (at <fe2cfcf5bc6441548007f5632555adab>:0)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <00b75695a55840eb9155e10b46a007cb>:0)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+GameManager_New:InitializeSceneComponents(Boolean)
+<SwitchScene>d__571:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+[Warning: Unity Log] Unable to add the requested character to font asset [Th

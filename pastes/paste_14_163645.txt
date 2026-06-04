@@ -1,0 +1,9 @@
+[Warning:Pirates Gambit Mod]   [GameManager_New:TradeDice] IL Compile Error (unknown location)
+[Info   :Pirates Gambit Mod]   [OK] PlayCardUpgradeAnimation
+[Info   :Pirates Gambit Mod]   [OK] PlayDiceUpgradeAnimation
+[Info   :Pirates Gambit Mod]   [OK] Display_CardsToDestroy
+[Info   :Pirates Gambit Mod]   [OK] RerollAnimation
+[Info   :Pirates Gambit Mod]   [OK] SailToNextStop
+[Info   :Pirates Gambit Mod] All patches active!
+[Message:   BepInEx] Chainloader startup complete
+[Info   : Unity Log] Odin Serializer detected whitelisted r

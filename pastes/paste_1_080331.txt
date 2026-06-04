@@ -1,0 +1,13 @@
+mod：
+Faster Scouting：侦查加速
+Faster Walking：走路加速
+x2 Combat Speed：战斗加速
+奇物互动提示(区域扩展+原版)：直接显示奇物互动结果
+中文字体重做：更符合游戏特色的字体及描述
+Mod 简体中文化
+地牢自动补给：下图前商店页面可自动补给需要的物品，如食物等
+Level Restrictions Removal：可以让高级英雄打低级本
+7 Quirks, 7 Lockable：黄癖红癖增加至最多各7种。
+我全都要_I Want Them ALL：物品堆叠无上限
+4 Trinkets+24 slot inventory：4饰品格+24背包格
+「莫德凯撒」Mordekaiser Class：超模角色和装备直接秒秒秒

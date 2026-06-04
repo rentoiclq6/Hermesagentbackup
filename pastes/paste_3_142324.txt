@@ -1,0 +1,8 @@
+Eclipse Integration
+Automatically install GhidraDev
+Eclipse Installation Directory
+Eclipse Workspace Directory (optional)
+Script Editor Port
+12321
+Symbol Lookup Port
+12322

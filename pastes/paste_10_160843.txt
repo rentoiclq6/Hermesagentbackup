@@ -1,0 +1,16 @@
+[Info   : Unity Log] Odin Serializer detected whitelisted runtime platform WindowsPlayer and memory read test succeeded; enabling all unaligned memory read/writes.
+[Info   : Unity Log] Local User: WWW.ACGBNS.COM:0
+[Info   : Unity Log] Initalizing Steam Input System
+[Error  : Unity Log] Failed to load the Steam App List: State = ProtocolError, Error Message = HTTP/1.1 404 Not Found
+[Warning: Unity Log] Unable to add the requested character to font asset [Infinite]'s atlas texture. Please make the texture [Infinite Atlas] readable.
+[Warning: Unity Log] Unable to add the requested character to font asset [Infinite]'s atlas texture. Please make the texture [Infinite Atlas] readable.
+[Warning: Unity Log] Unable to add the requested character to font asset [Thick Simplified Chinese]'s atlas texture. Please make the texture [Thick Simplified Chinese Atlas] readable.
+[Warning: Unity Log] The character used for Underline is not available in font asset [Thick Simplified Chinese].
+[Warning: Unity Log] Unable to add the requested character to font asset [Thick Simplified Chinese]'s atlas texture. Please make the texture [Thick Simplified Chinese Atlas] readable.
+[Warning: Unity Log] The character used for Underline is not available in font asset [Thick Simplified Chinese].
+[Warning: Unity Log] Unable to add the requested character to font asset [Thick Simplified Chinese]'s atlas texture. Please make the texture [Thick Simplified Chinese Atlas] readable.
+[Warning: Unity Log] The character used for Underline is not available in font asset [Thick Simplified Chinese].
+[Warning: Unity Log] Unable to add the requested character to font asset [Traditional Chinese]'s atlas texture. Please make the texture [Traditional Chinese Atlas] readable.
+[Warning: Unity Log] Unable to add the requested character to font asset [Traditional Chinese]'s atlas texture. Please make the texture [Traditional Chinese Atlas] readable.
+[Warning: Unity Log] Unable to add the requested character to font asset [Traditional Chinese]'s atlas texture. Please make the texture [Traditional Chinese Atlas] readable.
+[Warning: Unity Log] Unable to add the requested character to font asset [Traditional Chinese]'s atlas texture. Please make the texture [Traditional Chinese Atlas] readable.

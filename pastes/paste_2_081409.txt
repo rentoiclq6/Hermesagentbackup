@@ -1,0 +1,12 @@
+    | 1 | Faster Scouting (侦查加速) | https://steamcommunity.com/sharedfiles/filedetails/?id=1419394405 |
+    | 2 | Faster Walking (走路加速) | https://steamcommunity.com/sharedfiles/filedetails/?id=946034275 |
+    | 3 | x2 Combat Speed (战斗加速) | https://steamcommunity.com/sharedfiles/filedetails/?id=1483754805 |
+    | 4 | Curio Hints 原版 (奇物互动提示·原版) | https://steamcommunity.com/sharedfiles/filedetails/?id=929763488 | 
+    | 6 | 中文字体重做(Chinese Font Rework) | https://steamcommunity.com/sharedfiles/filedetails/?id=2814682822 |
+    | 7 | Mod 简体中文化 | https://steamcommunity.com/sharedfiles/filedetails/?id=1741850027 |
+    | 8 | Simple Auto Supplies (地牢自动补给) | https://steamcommunity.com/sharedfiles/filedetails/?id=3304308584 |
+    | 9 | Level Restrictions Removal | https://steamcommunity.com/sharedfiles/filedetails/?id=840391233 |
+    | 10 | 7 Quirks, 7 Lockable (黄癖红癖各7个) | https://steamcommunity.com/sharedfiles/filedetails/?id=1111555280 |
+    | 11 | 我全都要_I Want Them ALL (物品堆叠无上限) | https://steamcommunity.com/sharedfiles/filedetails/?id=2862923606 |
+    | 13 | 「莫德凯撒」Mordekaiser Class → 原版 | https://steamcommunity.com/sharedfiles/filedetails/?id=3144299757 |
+    | — | 另外，「莫德凯撒」还有个 补丁 (如果原版有问题) | https://steamcommunity.com/sharedfiles/filedetails/?id=3659966915 |

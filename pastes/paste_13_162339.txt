@@ -1,0 +1,14 @@
+PS D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod> dotnet build
+  正在确定要还原的项目…
+  所有项目均是最新的，无法还原。
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(16,25): error
+CS0246: 未能找到类型或命名空间名“ManualLogSource”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\Bep
+InEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+
+生成失败。
+
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(16,25): error
+CS0246: 未能找到类型或命名空间名“ManualLogSource”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\Bep
+InEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+    0 个警告
+    1 个错误

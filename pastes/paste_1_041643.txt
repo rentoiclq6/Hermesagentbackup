@@ -1,0 +1,9 @@
+🧭 隐藏宝箱提示	Hidden Treasure Hint / seek_secret	在地图上自动标记隐藏宝箱的可能位置
+🔄 重新开始战斗	BattleRestart	增加“重新战斗”按钮，实现“悔棋”功能
+📊 卡牌胜率统计	CardWinRateStatistics	显示每张卡牌的抓取胜率及玩家评价
+📈 战斗统计	Battle Statistics	统计全队输出、治疗等详细数据
+⚙️ 生活质量	Quality of Life	整合了加速移动、提升售货机便利性等多种优化
+🚀 SlightlyBetterArk	SlightlyBetterArk	多项优化，例如可手动移除露西的诅咒技能
+🔍 开发者模式	Developer Mode	可在图鉴中直接拿道具、开启控制台等调试功能
+🚫 禁用物品	Ban Item	可禁用不喜欢的道具或技能，定制自己的物品池
+🎒 更多物品栏	Backpack+	大幅扩充背包容量

@@ -1,0 +1,11 @@
+[Info   :Pirates Gambit Mod] === Pirates Gambit Mod v1.2 ===
+[Info   :Pirates Gambit Mod] Coin x3 | Repair /3
+[Info   :Pirates Gambit Mod]   [OK] PlayCoinDropAnimation
+[Info   :Pirates Gambit Mod]   [OK] GetWheelCoinEarnings
+[Info   :Pirates Gambit Mod]   [OK] Display_RepairByCoins
+[Info   :Pirates Gambit Mod]   [OK] RemoveRoundRewardCoin
+[Info   :Pirates Gambit Mod] All patches active!
+[Message:   BepInEx] Chainloader startup complete
+[Info   : Unity Log] Odin Serializer detected whitelisted runtime platform WindowsPlayer and memory read test succeeded; enabling all unaligned memory read/writes.
+[Info   : Unity Log] Local User: WWW.ACGBNS.COM:0
+[Info   : Unity Log] Initalizing Steam Input System

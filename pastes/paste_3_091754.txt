@@ -1,0 +1,7 @@
+Use
+command.
+remove_card
+▲ No card name specified.>card
+▲ No card name specified.cardpile removefromdeck
+ The command 'cardpile' does not exist.
+You can use the 'help' to get a list of all possible commands.

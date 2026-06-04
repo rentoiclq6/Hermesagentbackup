@@ -1,0 +1,38 @@
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“0
+Harmony”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins
+\PiratesGambitMod\PiratesGambitMod.csproj]
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“B
+epInEx”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\
+PiratesGambitMod\PiratesGambitMod.csproj]
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“A
+ssembly-CSharp”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\
+plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“A
+ssembly-CSharp-firstpass”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambi
+t\BepInEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“U
+nityEngine”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plug
+ins\PiratesGambitMod\PiratesGambitMod.csproj]
+C:\Program Files\dotnet\sdk\8.0.420\Microsoft.Common.CurrentVersion.targets(2412,5): warning MSB3245: 未能解析此引用。未能找到程序集“U
+nityEngine.CoreModule”。请检查磁盘上是否存在该程序集。 如果您的代码需要此引用，则可能出现编译错误。 [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\B
+epInEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(3,7): error CS
+0246: 未能找到类型或命名空间名“BepInEx”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugi
+ns\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(4,7): error CS
+0246: 未能找到类型或命名空间名“HarmonyLib”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\pl
+ugins\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(5,7): error CS
+0246: 未能找到类型或命名空间名“UnityEngine”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\p
+lugins\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(10,27): error
+CS0246: 未能找到类型或命名空间名“BaseUnityPlugin”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\Bep
+InEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(9,6): error CS
+0246: 未能找到类型或命名空间名“BepInPluginAttribute”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\
+BepInEx\plugins\PiratesGambitMod\PiratesGambitMod.csproj]
+D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\plugins\PiratesGambitMod\Plugin_Simple.cs(9,6): error CS
+0246: 未能找到类型或命名空间名“BepInPlugin”(是否缺少 using 指令或程序集引用?) [D:\mygit\QuarkPanTool\downloads\XJ12389\Pirates Gambit\BepInEx\p
+lugins\PiratesGambitMod\PiratesGambitMod.csproj]
+    6 个警告
+    6 个错误

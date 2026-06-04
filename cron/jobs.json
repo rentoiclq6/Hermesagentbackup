@@ -1,0 +1,43 @@
+{
+  "jobs": [
+    {
+      "id": "23d355cdc6f0",
+      "name": "Steam \u5361\u724c\u8089\u9e3d\u6570\u636e\u5468\u66f4",
+      "prompt": "\u6267\u884c\u4ee5\u4e0b\u547d\u4ee4\uff0c\u4e00\u6b21\u6027\u66f4\u65b0\u5168\u90e8 8 \u7c7b Steam \u6e38\u620f\u7f13\u5b58\uff1a\n\nfor t in card survival rpg horror farming strategy puzzle roguelike; do\n  python3 /home/da/.hermes/skills/gaming/steam-recommender/scripts/fetch_steam.py --type $t\n  sleep 2\ndone\n\n\u5b8c\u6210\u540e\u6c47\u603b\u5404\u7c7b\u578b\u6e38\u620f\u6570\u91cf\u3002",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * 0",
+        "display": "0 0 * * 0"
+      },
+      "schedule_display": "0 0 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-10T06:35:25.695773+08:00",
+      "next_run_at": "2026-05-17T00:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-16T10:18:31.466847+08:00"
+}
