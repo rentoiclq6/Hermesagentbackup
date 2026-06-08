@@ -13,3 +13,5 @@ User wants Hermes CLI to auto-start when opening Ubuntu WSL terminal. Implemente
 默认走 PLAN 模式：除非是 trivial 问题（如 1+1=？、简单格式说明、单文件小脚本），否则先写计划后执行。写计划时标注确定性、需要用户配合的步骤、前置条件。用户确认后再动手。
 §
 记忆自主管理：当记忆使用率≥80%时，我主动提出压缩方案让用户确认，不需用户提醒。方案需列出：当前条目、拟精简项、确认后执行。
+§
+Proactive system maintainer — initiates config optimization, disk cleanup, and backup sync unprompted. Decisive: prefers full auto-cleanup over selective review once given a categorized summary. Systems thinker: values automation (git sync, cron self-heal, auto cleanup). Chinese-native, comfortable with CLI/git/GitHub. Trusts automation with clear output summaries.

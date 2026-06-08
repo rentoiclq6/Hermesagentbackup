@@ -52,3 +52,9 @@
 20:02:59 interrupt fired: msg='你怎么卡住了', children=0, parent._interrupt=True
 20:10:57 ENTER: queued interrupt msg='又卡住了吗你的进程显示总是让我很担心', agent_running=True
 20:10:57 interrupt fired: msg='又卡住了吗你的进程显示总是让我很担心', children=0, parent._interrupt=True
+13:51:08 ENTER: queued interrupt msg='这个\\document 中文初版.md是在我的外接硬盘里啊你为什么这么迟钝还找不到', agent_running=True
+13:51:08 interrupt fired: msg='这个\\document 中文初版.md是在我的外接硬盘里啊你为什么这么迟钝还找不到', children=0, parent._interrupt=True
+07:26:24 ENTER: queued interrupt msg='这是ccswitch的配置目录C:\\Users\\da\\.cc-switch  我也找不到具体配置文件是哪一个', agent_running=True
+07:26:24 interrupt fired: msg='这是ccswitch的配置目录C:\\Users\\da\\.cc-switch  我也找不到具体配置文件是哪一个', children=0, parent._interrupt=True
+09:15:48 interrupt fired: msg='不你应该预防这一类让用户重复试错的情况发生或者提前告知我有此类风险并且告诉我当前失败原因的可信度，不然你会占用我特别多时', children=0, parent._interrupt=True
+09:15:48 ENTER: queued interrupt msg='不你应该预防这一类让用户重复试错的情况发生或者提前告知我有此类风险并且告诉我当前失败原因的可信度，不然你会占用我特别多时', agent_running=True

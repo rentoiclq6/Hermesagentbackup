@@ -54,7 +54,37 @@ locate the relevant prior session — do NOT ask "what do you mean?":
 
 ---
 
-## Section B: Self-Audit (Honesty Report)
+## Section B: Config Management & Backup
+
+### Purpose
+Maintain Hermes configuration under version control and recover from corruption or hardware migration.
+
+### Config Backup to GitHub
+When the user asks to sync/backup/mirror Hermes config, reference the full procedure in:
+- `references/config-backup-github.md` — step-by-step: git init, .gitignore, credential store, push
+
+Key points extracted from that procedure:
+- Exclude `.env` (API keys), `hermes-agent/`, `node/`, `checkpoints/`, `sessions/`, `logs/`, `cache/`, `state.db*`
+- Use classic PAT (`ghp_...`) not fine-grained — fine-grained PATs require explicit repo grant and often 403
+- Credential must be cached since git push runs non-interactively in WSL terminal
+- Subsequent syncs: `git add -A && git commit -m "update: $(date +%Y-%m-%d)" && git push`
+
+### Config Tuning
+Performance tuning (e.g., `prepare-writing` optimization) typically modifies:
+- `compression.threshold` — 0.4 for more aggressive compaction (from default 0.5)
+- `agent.gateway_timeout` — 300s (from 1800s)
+- `request_timeout_seconds` / `stale_timeout_seconds` — 300s / 120s (if supported)
+- `tool_execution_mode` — `async` (if supported)
+
+Always verify with `grep -n "threshold\|timeout\|execution" ~/.hermes/config.yaml` after changes.
+
+### Clone vs Backup
+- **Clone** (profile-based): `hermes profile create clone-me --clone-all`, then clean + tar.gz to desktop. For physical transfer to another machine.
+- **Backup** (git-based): Turn `~/.hermes/` into git repo, push to GitHub. For ongoing incremental sync and history.
+
+---
+
+## Section C: Self-Audit (Honesty Report)
 
 ### Purpose
 Weekly cronjob that scans the past 7 days of conversations and reports the

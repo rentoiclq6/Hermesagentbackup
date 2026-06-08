@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "session_id": "proc_425380542d7f",
+    "command": "litellm --config ~/litellm-config.yaml --port 4000 --debug",
+    "pid": 2509,
+    "pid_scope": "host",
+    "cwd": "/home/da",
+    "started_at": 1780874264.4495149,
+    "task_id": "default",
+    "session_key": "",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_interval": 0,
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]

@@ -136,6 +136,86 @@ rm -rf "/mnt/c/Users/<user>/AppData/Roaming/Tencent/xwechat/"/*
 
 6. **Windows.old is NOT a simple rm target.** It has security descriptors that make `rm -rf` from WSL fail partially. Recommend `cleanmgr` (Disk Cleanup) instead.
 
+### 7. Duplicate File Detection (MD5-Based)
+
+When the user wants to find and clean **exact duplicate files** (identical content) on C:.
+
+**Strategy:** Two-phase approach for speed:
+
+1. **Phase 1 — Size group** (fast): enumerate all files, group by file size
+2. **Phase 2 — Hash verify** (selective): only compute MD5/SHA for files sharing the same size
+
+**Tools available from WSL:**
+
+| Tool | Available | Notes |
+|---|---|---|
+| `python3` + hashlib | ✅ Always | No sudo needed, two-phase strategy |
+| `fdupes` / `rdfind` | ❌ Not available | Needs `sudo apt install` — blocked in WSL |
+| PowerShell Get-FileHash | ⚠️ Slow | Much slower than Python via /mnt/c/ |
+
+**Recommended Python approach (full workflow):**
+
+```python
+import os, hashlib
+from collections import defaultdict
+
+HOME = "/mnt/c/Users/<user>"
+TARGETS = [f"{HOME}/Desktop", f"{HOME}/Downloads", f"{HOME}/Documents",
+           f"{HOME}/Pictures", f"{HOME}/AppData/Local/Temp"]
+
+# Phase 1: size grouping
+size_groups = defaultdict(list)
+for target in TARGETS:
+    for root, dirs, files in os.walk(target):
+        dirs[:] = [d for d in dirs if d not in {'node_modules', '.git', '__pycache__', 'venv', '.venv'}]
+        for fn in files:
+            fp = os.path.join(root, fn)
+            sz = os.path.getsize(fp)
+            if sz >= 1024:  # skip files < 1KB
+                size_groups[sz].append(fp)
+
+# Phase 2: only hash same-size files
+candidates = {sz: paths for sz, paths in size_groups.items() if len(paths) > 1}
+duplicates = []
+for size, paths in candidates.items():
+    hash_map = defaultdict(list)
+    for fp in paths:
+        h = hashlib.md5()
+        with open(fp, "rb", buffering=0) as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                h.update(chunk)
+        hash_map[h.hexdigest()].append(fp)
+    for hval, dupe_paths in hash_map.items():
+        if len(dupe_paths) > 1:
+            duplicates.append({"hash": hval, "size": size,
+                               "files": dupe_paths,
+                               "keep": dupe_paths[0],
+                               "to_delete": dupe_paths[1:]})
+```
+
+**Key cleanup shortcuts:**
+
+- **`_MEI*` temp dirs** in `AppData/Local/Temp/` — PyInstaller artifacts. Always safe to bulk delete entire directories (`shutil.rmtree`). These account for the majority of duplicate space.
+- **WeChat file cache** in `xwechat_files/` — duplicates from auto-backup in chat. Files like installers, documents may appear both in Downloads and WeChat. Delete WeChat copies, keep original.
+- **Duplicated game/project backups** — the user may have original + backup copies. Ask which to keep.
+
+**Deletion execution:**
+```python
+for root, dirs, files in os.walk(d, topdown=False):
+    for f in files:
+        os.remove(os.path.join(root, f))
+    for sub in dirs:
+        os.rmdir(os.path.join(root, sub))
+os.rmdir(d)
+```
+
+**Pitfalls:**
+1. **WSL → NTFS is slow.** Expect ~1-5 minutes per 10,000 files for hashing through DrvFs. Use the two-phase strategy (size first, hash second) to minimize hashing.
+2. **Locked files.** Files in use by running processes will fail with `EIO` or `EACCES`. Accept partial failures — they'll be cleaned on next reboot.
+3. **`$Recycle.Bin`** shows 0 bytes from WSL due to permissions. Use Windows `cleanmgr` instead.
+4. **Always present a categorized summary** (by directory/type) before deleting. Let the user choose between full-auto, temp-only, or selective cleanup.
+
 ## References
 
-See `references/disk-cleanup-sites.md` for the canonical list of safe-to-clean Windows paths and their exact WSL-mounted paths.
+- `references/disk-cleanup-sites.md` — canonical safe-to-clean Windows paths
+- `references/duplicate-cleanup.md` — reusable Python script template + strategies for duplicate file detection

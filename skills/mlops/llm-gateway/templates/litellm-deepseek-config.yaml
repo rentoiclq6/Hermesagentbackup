@@ -1,0 +1,91 @@
+# liteLLM Gateway Config — DeepSeek V4 Dual-Provider HA
+# Copy to: C:\\Users\\<user>\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\litellm\\config.yaml
+# Requires:
+#   DEEPSEEK_API_KEY env var (or replace sk-xxx below)
+#   OPENROUTER_API_KEY env var for HA fallback (optional — works without it)
+
+model_list:
+
+  # ═══════════════════════════════════════════════════════════════
+  # v4-pro: dual-provider HA (DeepSeek direct + OpenRouter)
+  # ═══════════════════════════════════════════════════════════════
+  - model_name: v4-pro
+    litellm_params:
+      model: deepseek/deepseek-v4-pro
+      api_key: os.environ/DEEPSEEK_API_KEY
+      rpm: 480
+    model_info:
+      mode: chat
+      supports_function_calling: true
+      max_tokens: 384000
+      input_cost_per_token: 0.000000435
+      output_cost_per_token: 0.00000087
+      input_cost_per_token_cache_hit: 0.000000003625
+
+  - model_name: v4-pro
+    litellm_params:
+      model: openrouter/deepseek/deepseek-v4-pro
+      api_key: os.environ/OPENROUTER_API_KEY
+      rpm: 480
+    model_info:
+      mode: chat
+      supports_function_calling: true
+      max_tokens: 384000
+      input_cost_per_token: 0.00000050
+      output_cost_per_token: 0.00000100
+
+  # ═══════════════════════════════════════════════════════════════
+  # v4-flash: dual-provider HA
+  # ═══════════════════════════════════════════════════════════════
+  - model_name: v4-flash
+    litellm_params:
+      model: deepseek/deepseek-v4-flash
+      api_key: os.environ/DEEPSEEK_API_KEY
+      rpm: 2400
+    model_info:
+      mode: chat
+      supports_function_calling: true
+      max_tokens: 384000
+      input_cost_per_token: 0.00000014
+      output_cost_per_token: 0.00000028
+      input_cost_per_token_cache_hit: 0.0000000028
+
+  - model_name: v4-flash
+    litellm_params:
+      model: openrouter/deepseek/deepseek-v4-flash
+      api_key: os.environ/OPENROUTER_API_KEY
+      rpm: 2400
+    model_info:
+      mode: chat
+      supports_function_calling: true
+      max_tokens: 384000
+      input_cost_per_token: 0.00000018
+      output_cost_per_token: 0.00000035
+
+  # ═══════════════════════════════════════════════════════════════
+  # general: cheapest path, always flash direct (no HA overhead)
+  # ═══════════════════════════════════════════════════════════════
+  - model_name: general
+    litellm_params:
+      model: deepseek/deepseek-v4-flash
+      api_key: os.environ/DEEPSEEK_API_KEY
+      rpm: 2400
+    model_info:
+      mode: chat
+      supports_function_calling: true
+      max_tokens: 384000
+
+router_settings:
+  routing_strategy: latency-based-routing
+  enable_loadbalancing: true
+  num_retries: 2
+  request_timeout: 30
+  fallbacks:
+    - {"v4-pro": ["v4-flash"]}
+  cooldown_time: 300
+  max_budget: 20.0
+  budget_duration: 1d
+  cache: True
+  cache_params:
+    type: local
+    ttl: 3600
